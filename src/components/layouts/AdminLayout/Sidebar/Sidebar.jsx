@@ -39,16 +39,16 @@ const Sidebar = ({ isHidden, turnToHidden }) => {
                         </li>
 
                         <li className="flex items-center">
-                            <span className='cursor-pointer flex items-center'>
+                            <Link to="/users" className='cursor-pointer flex items-center'>
                                 <UserCircleIcon className="w-6 h-6 mr-4" />
                                 Usuarios
-                            </span>
+                            </Link>
                         </li>
                         <li className="flex items-center">
-                            <span className='cursor-pointer flex items-center'>
+                            <Link to="/" className='cursor-pointer flex items-center'>
                                 <ArrowUpOnSquareIcon className="w-6 h-6 mr-4" />
                                 Subir archivo
-                            </span>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
