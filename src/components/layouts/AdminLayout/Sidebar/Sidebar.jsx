@@ -1,7 +1,5 @@
 
 import { 
-    MicrophoneIcon,
-    PlayIcon,
     Squares2X2Icon,
     UserCircleIcon,
     ArrowUpOnSquareIcon, 
@@ -34,27 +32,16 @@ const Sidebar = ({ isHidden, turnToHidden }) => {
                     </div>
                     <ul className="pt-8 flex flex-col gap-8 lg:gap-6">
                         <li className='flex items-center'>
-                            <Link to="/dashboard" className='cursor-pointer flex items-center'>
+                            <Link to="/" className='cursor-pointer flex items-center'>
                                 <Squares2X2Icon className="w-6 h-6 mr-4" />
                                 Inicio
                             </Link>
                         </li>
-                        <li className="flex items-center">
-                            <Link to="/gallery" className='cursor-pointer flex items-center'>
-                                <PlayIcon className="w-6 h-6 mr-4" />
-                                Colección
-                            </Link>
-                        </li>
-                        <li className="flex items-center">
-                            <span className='cursor-pointer flex items-center'>
-                                <MicrophoneIcon className="w-6 h-6 mr-4" />
-                                Transcripción
-                            </span>
-                        </li>
+
                         <li className="flex items-center">
                             <span className='cursor-pointer flex items-center'>
                                 <UserCircleIcon className="w-6 h-6 mr-4" />
-                                Reconocimiento
+                                Usuarios
                             </span>
                         </li>
                         <li className="flex items-center">
