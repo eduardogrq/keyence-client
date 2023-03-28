@@ -54,7 +54,7 @@ const Users = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {isLoading ?
+                  {!isLoading ?
                     users.map(user => (
                       <tr key={`tr-${user.userId}-${user.userName}`} class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{user.userId}</td>
@@ -77,19 +77,19 @@ const Users = () => {
                       // Creating array of 4 length only to not repeat 4 times html code
                       new Array(6).fill().map((_, i) => (
                         <tr key={`tr-${i}`} class="bg-white border-b transition duration-300 ease-in-out hover:bg-gray-100">
-                          <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                          <td class="px-6 py-4">
+                            <div class="rounded-full bg-slate-300 h-2 w-1/3 animate-pulse"></div>
+                          </td>
+                          <td class="px-6 py-4">
                             <div class="rounded-full bg-slate-300 h-2 w-2/3 animate-pulse"></div>
                           </td>
-                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          <td class="px-6 py-4">
                             <div class="rounded-full bg-slate-300 h-2 w-2/3 animate-pulse"></div>
                           </td>
-                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          <td class="px-6 py-4">
                             <div class="rounded-full bg-slate-300 h-2 w-2/3 animate-pulse"></div>
                           </td>
-                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
-                            <div class="rounded-full bg-slate-300 h-2 w-2/3 animate-pulse"></div>
-                          </td>
-                          <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                          <td class="px-6 py-4">
                             <div class="rounded-full bg-slate-300 h-2 w-2/3 animate-pulse"></div>
                           </td>
                         </tr>
